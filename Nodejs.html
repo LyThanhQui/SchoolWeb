@@ -1,0 +1,197 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+<!----------Header------------->
+<head>
+ <link rel="icon" href="icon1.png" type="image/x-icon" sizes="16x16">
+  <title>SchoolWeb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  
+  .imglogo{
+  padding-bottom:15px;
+  }
+  
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color:#333;
+  color: white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+.title{
+padding: 10px;
+color:rgb(72,150,32);
+}
+.index {
+color:rgb(72,150,32);
+}
+  
+  </style>
+  
+  
+  
+  
+</head>
+<!----------End Header------------->
+
+
+<!----------Body------------->
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>SCHOOL <font style = "color:rgb(72,150,32)">WEB</font></h1>
+  <p>Trường học dành cho Web Developer</p> 
+</div>
+
+<!----------navbar------------->
+<nav class="navbar navbar-inverse" id="navbar">
+  <div class="container-fluid">
+	
+    <div class="navbar-header">
+   
+        <a class="navbar-brand" href="index.html">Trang chủ</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">HTML</a></li>
+		<li ><a href="#">CSS</a></li>
+		<li ><a href="#">JavaScript</a></li>
+		<li ><a href="Nodejs.html">Node.js</a></li>
+		<li ><a href="#">C#</a></li>
+		<li ><a href="#">PHP</a></li>
+		<li ><a href="#">SQL</a></li>
+        <li><a href="#">Tham khảo</a></li>
+      </ul>
+    </div>
+	
+  </div>
+</nav>
+<!----------End navbar------------->
+
+<h3 class="title">Node.js Tutorials</h3>
+
+
+<div class="tab">
+  <button class="tablinks">Node.js Giới thiệu </button>
+  <button class="tablinks" > Node.js Bắt đầu</button>
+  <button class="tablinks" >Node.js Modules</button>
+  <button class="tablinks" >Node.js HTTP Module</button>
+  <button class="tablinks">Node.js File System</button>
+  <button class="tablinks" >Node.js NPM</button>
+  <button class="tablinks" >Node.js Events</button>
+  <button class="tablinks" >Node.js Upload Files</button>
+  <button class="tablinks" >Node.js Email</button>
+  <h3 class="title">Node.js MySQL</h3>
+  <button class="tablinks" >MySQL Bắt đầu </button>
+  <button class="tablinks">MySQL Tạo Database </button>
+  <button class="tablinks">MySQL Tạo Bảng </button>
+  <button class="tablinks" >MySQL Insert Into</button>
+  <button class="tablinks" >MySQL Select From</button>
+  <button class="tablinks">MySQL Where</button>
+  <button class="tablinks" >MySQL Order By</button>
+  <button class="tablinks" >MySQL Delete</button>
+  <button class="tablinks" >MySQL Drop Table</button>
+  <button class="tablinks">MySQL Update</button>
+  <button class="tablinks" >MySQL Limit</button>
+  <button class="tablinks" >MySQL Jion</button>
+
+</div>
+
+<div id="London" class="tabcontent">
+  <h3 class="index"><b>Node.js Giới thiệu</b></h3>
+ <ol type="I" >
+ <li class="index"><b>Node.js là gì?</b></li>
+	<p>
+	Node.js là một môi trường máy chủ nguồn mở<br>
+	Node.js là miễn phí<br>
+	Node.js chạy trên nhiều nền tảng khác nhau (Windows, Linux, Unix, Mac OS X, v.v.)<br>
+	Node.js sử dụng JavaScript trên máy chủ<br>
+	</p>
+ <li class="index"><b>Tạo sao phải là Node.js?</b></li>
+	<p><b>Node.js sử dụng lập trình bất đồng bộ!</b><br>
+	Một nhiệm vụ chung cho một máy chủ web có thể là mở một tệp trên máy chủ và trả lại nội dung cho máy khách.<br>
+	<b>Đây là cách PHP hoặc ASP xử lý một yêu cầu tệp:</b>
+	<ol type="1">
+		<li>Gửi tác vụ đến hệ thống tệp của máy tính.</li>
+		<li>Chờ trong khi hệ thống tệp mở và đọc tệp.</li>
+		<li>Trả về nội dung cho khách hàng.</li>
+		<li>Sẵn sàng để xử lý các yêu cầu tiếp theo.</li>
+	</ol>
+	<b>Đây là cách Node.js xử lý yêu cầu tệp:</b>
+	<ol type="1">
+		<li>Gửi tác vụ đến hệ thống tệp của máy tính.</li>
+		<li>sàng để xử lý các yêu cầu tiếp theo.</li>
+		<li>Khi hệ thống tệp đã mở và đọc tệp, máy chủ sẽ trả lại nội dung cho máy khách.</li>
+		Node.js loại bỏ sự chờ đợi và chỉ cần tiếp tục với yêu cầu tiếp theo.
+		Node.js chạy lập trình đơn luồng, không chặn(non-blocking), lập trình không đồng bộ, rất hiệu quả về bộ nhớ.
+	</ol>
+	</p>
+ <li class="index"><b>Node.js có thể làm gì?</b></li>
+	<p>	Node.js có thể tạo nội dung trang động<br>
+		Node.js có thể tạo, mở, đọc, viết, xóa và đóng file trên máy chủ<br>
+		Node.js có thể thu thập dữ liệu biểu mẫu(form data)<br>
+		Node.js có thể thêm, xóa, sửa đổi dữ liệu trong cơ sở dữ liệu của bạn<br>
+	</p>
+ <li class="index"><b>Node.js File là gì?</b></li>
+	<p>	Các file Node.js chứa các tác vụ sẽ được thực thi trong các sự kiện nhất định<br>
+		Một sự kiện điển hình là ai đó đang cố truy cập một cổng trên máy chủ<br>
+		Các file Node.js phải được bắt đầu trên máy chủ trước khi có bất kỳ ảnh hưởng nào<br>
+		Các tệp Node.js có phần mở rộng ".js"<br>
+
+	</p>
+ </ol>
+
+
+
+
+
+<!----------Footer------------->
+
+
+
+</body>
+</html>
