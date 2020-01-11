@@ -18,7 +18,56 @@
   .imglogo{
   padding-bottom:15px;
   }
+   <!-----dropdown---->
+
+
+  .dropbtn a:hover{
+  background-color: red;
+  
+  }
+  .dropdown-content a{
+  float: none;
+  color:white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  }
+  
+  .dropdown-content a:hover{
+  background-color: #ddd;
+  }
+  
+  .dropdown-content{
+   display: none;
+   position: absolute;
+   background-color:#333;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+  }
+  
+	.dropdown:hover .dropdown-content{
+	display: block;
+	}
+	
+	.dropdown .dropbtn{
+	background-color: #333;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color:white;
+	padding 14px 16px;
+	font-family: inherit;
+	margin
+	}
+  
+	<!-----End dropdown----> 
   </style>
+  
+  
+  
+  
 </head>
 <!----------End Header------------->
 
@@ -32,7 +81,7 @@
 </div>
 
 <!----------navbar------------->
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" id="navbar">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -40,7 +89,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Tất cả</a>
+	  <!-----dropdown---->
+	  <div class = "dropdown">
+		<button class = "dropbtn" >
+        <a class="navbar-brand" href="#">Tất cả</a>
+	    </button>
+		 <div class = "dropdown-content">
+		 <a a href = "#">HTML</a>
+		 <a a href = "#">CSS</a>
+		 <a a href = "#">JavaScript</a>
+		 </div>
+	   <!-----End dropdown----> 
+	  </div>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
@@ -81,7 +141,7 @@
       <ol>
 	  <li>HTML</li>
 	  <li>CSS</li>
-	  <li>JavaCript</li>
+	  <li>JavaSCript</li>
 	  <li>PHP</li>
 	   <li>C#</li>
 	  <li>Node.js</li>
