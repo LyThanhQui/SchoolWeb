@@ -1,0 +1,240 @@
+	<!DOCTYPE html>
+<html lang="en">
+
+<!----------Header------------->
+<head>
+ <link rel="icon" href="icon1.png" type="image/x-icon" sizes="16x16">
+  <title>SchoolWeb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
+  
+  
+  <style>
+   
+  .imglogo{
+  padding-bottom:15px;
+  }
+  
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+  float: left;
+  width: 30%;
+  height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color:#333;
+  color: white;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+}
+
+div .title{
+padding: 10px;
+color:rgb(72,150,32);
+font-size: large;
+}
+div .title1{
+padding: 10px;
+color:rgb(72,150,32);
+font-size: large;
+}
+.index {
+color:rgb(72,150,32);
+}
+
+.nodeLink{
+background-color: #ddd;
+}
+<!-- use link--->
+
+
+  </style>
+  
+  <script type="text/javascript" src="jquery-3.4.1.min.js">
+  </script>
+  
+  <script>
+  $(document).ready(function(){
+	<!--$(".tablinks").hide();-->
+	$(".title").click(function(){
+	$(".tablinks").slideToggle();
+	});
+	
+	
+	$(".tablinks1").hide();
+	$(".title1").click(function(){
+	$(".tablinks1").slideToggle();
+	});
+  });
+  </script>
+  
+  
+  
+</head>
+<!----------End Header------------->
+
+
+<!----------Body------------->
+<body>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>SCHOOL <font style = "color:rgb(72,150,32)">WEB</font></h1>
+  <p>Trường học dành cho Web Developer</p> 
+</div>
+
+<!----------navbar------------->
+<nav class="navbar navbar-inverse" id="navbar">
+  <div class="container-fluid">
+	
+    <div class="navbar-header">
+   
+        <a class="navbar-brand" href="/C:/Users/lquii/OneDrive/Máy tính/LT WEB/SchoolWeb/index.html">Trang chủ</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">HTML</a></li>
+		<li ><a href="#">CSS</a></li>
+		<li ><a href="#">JavaScript</a></li>
+		<li ><a href="/C:/Users/lquii/OneDrive/Máy tính/LT WEB/SchoolWeb/Node.js/Nodejs.html">Node.js</a></li>
+		<li ><a href="#">C#</a></li>
+		<li ><a href="#">PHP</a></li>
+		<li ><a href="#">SQL</a></li>
+        <li><a href="#">Tham khảo</a></li>
+      </ul>
+    </div>
+	
+  </div>
+</nav>
+<!----------End navbar------------->
+
+
+
+
+<div class="tab">
+	
+  <button class="title"><b>Phần 1: JS Tutorials</b></button>
+  <button class="tablinks" >JS Home </button>
+  <button class="tablinks" >JS Introduction</button>
+  <button class="tablinks" >Node.js Modules</button>
+  <button class="tablinks" >Node.js HTTP Module</button>
+  <button class="tablinks">Node.js File System</button>
+  <button class="tablinks" >Node.js NPM</button>
+  <button class="tablinks" >Node.js Events</button>
+  <button class="tablinks" >Node.js Upload Files</button>
+  <button class="tablinks" >Node.js Email</button>
+  <button class="tablinks" >Node.js Giới thiệu </button>
+  <button class="tablinks" > Node.js Bắt đầu</button>
+  <button class="tablinks" >Node.js Modules</button>
+  <button class="tablinks" >Node.js HTTP Module</button>
+  <button class="tablinks">Node.js File System</button>
+  <button class="tablinks" >Node.js NPM</button>
+  <button class="tablinks" >Node.js Events</button>
+  <button class="tablinks" >Node.js Upload Files</button>
+  <button class="tablinks" >Node.js Email</button>
+  <button class="tablinks" >Node.js Giới thiệu </button>
+  <button class="tablinks" > Node.js Bắt đầu</button>
+  <button class="tablinks" >Node.js Modules</button>
+  <button class="tablinks" >Node.js HTTP Module</button>
+  <button class="tablinks">Node.js File System</button>
+  <button class="tablinks" >Node.js NPM</button>
+  <button class="tablinks" >Node.js Events</button>
+  <button class="tablinks" >Node.js Upload Files</button>
+  <button class="tablinks" >Node.js Email</button>
+  <button class="title"><b>Phần 2: JS Form</b></button>
+  
+  
+</div>
+
+<div id="London" class="tabcontent">
+  <h3 class="index"><b>Node.js Giới thiệu</b></h3>
+ <ol type="I" >
+ <li class="index"><b>Node.js là gì?</b></li>
+	<p>
+	Node.js là một môi trường máy chủ nguồn mở<br>
+	Node.js là miễn phí<br>
+	Node.js chạy trên nhiều nền tảng khác nhau (Windows, Linux, Unix, Mac OS X, v.v.)<br>
+	Node.js sử dụng JavaScript trên máy chủ<br>
+	</p>
+ <li class="index"><b>Tạo sao phải là Node.js?</b></li>
+	<p><b>Node.js sử dụng lập trình bất đồng bộ!</b><br>
+	Một nhiệm vụ chung cho một máy chủ web có thể là mở một tệp trên máy chủ và trả lại nội dung cho máy khách.<br>
+	<b>Đây là cách PHP hoặc ASP xử lý một yêu cầu tệp:</b>
+	<ol type="1">
+		<li>Gửi tác vụ đến hệ thống tệp của máy tính.</li>
+		<li>Chờ trong khi hệ thống tệp mở và đọc tệp.</li>
+		<li>Trả về nội dung cho khách hàng.</li>
+		<li>Sẵn sàng để xử lý các yêu cầu tiếp theo.</li>
+	</ol>
+	<b>Đây là cách Node.js xử lý yêu cầu tệp:</b>
+	<ol type="1">
+		<li>Gửi tác vụ đến hệ thống tệp của máy tính.</li>
+		<li>Sẵn sàng để xử lý các yêu cầu tiếp theo.</li>
+		<li>Khi hệ thống tệp đã mở và đọc tệp, máy chủ sẽ trả lại nội dung cho máy khách.</li>
+	</ol>
+		<p>Node.js loại bỏ sự chờ đợi và chỉ cần tiếp tục với yêu cầu tiếp theo.</p>
+		<p>Node.js chạy lập trình đơn luồng, không chặn(non-blocking), lập trình không đồng bộ, rất hiệu quả về bộ nhớ.</p>
+	</p>
+ <li class="index"><b>Node.js có thể làm gì?</b></li>
+	<p>	Node.js có thể tạo nội dung trang động<br>
+		Node.js có thể tạo, mở, đọc, viết, xóa và đóng file trên máy chủ<br>
+		Node.js có thể thu thập dữ liệu biểu mẫu(form data)<br>
+		Node.js có thể thêm, xóa, sửa đổi dữ liệu trong cơ sở dữ liệu của bạn<br>
+	</p>
+ <li class="index"><b>Node.js File là gì?</b></li>
+	<p>	Các file Node.js chứa các tác vụ sẽ được thực thi trong các sự kiện nhất định<br>
+		Một sự kiện điển hình là ai đó đang cố truy cập một cổng trên máy chủ<br>
+		Các file Node.js phải được bắt đầu trên máy chủ trước khi có bất kỳ ảnh hưởng nào<br>
+		Các tệp Node.js có phần mở rộng ".js"<br>
+	</p>
+	<p>Bài tiếp theo tôi sẽ thảo luận về <b>Node.js Bắt đầu</b>. Tôi sẽ hướng dẫn cho các bạn Download và sử dụng Node.js trên Windows từng bước một. Ở bài này tôi đã giới thiệu về Node.js</p>
+	
+ </ol>
+
+
+
+
+
+<!----------Footer------------->
+
+<div id="footer" class="jumbotron text-center" style="margin-bottom:0">
+  <img src ="images/icon1.png" width = "50px" height = "50px">  <p>SCHOOL <font style = "color:rgb(72,150,32)">WEB</font></p>
+  <p></p>
+</div>
+
+</body>
+</html>
